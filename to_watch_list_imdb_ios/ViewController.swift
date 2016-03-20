@@ -4,6 +4,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var movie : Movie?
+    var searchService: SearchService = SearchService.instance
 
     @IBOutlet weak var textFieldMovieToSearch: UITextField!
     
@@ -19,6 +20,20 @@ class ViewController: UIViewController {
 
 
     @IBAction func touchButtonSearch(sender: UIButton) {
+        searchMovie()
     }
+    
+    func searchMovie() {
+        searchService.searchMovie() { result in
+            var msg: String
+            switch (result) {
+            case .Success:
+                msg = "success"
+            case .Failure(let error):
+                msg = error.localizedDescription
+            }
+        }
+    }
+    
 }
 

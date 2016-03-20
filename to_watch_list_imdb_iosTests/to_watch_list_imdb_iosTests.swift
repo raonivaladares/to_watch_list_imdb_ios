@@ -33,4 +33,16 @@ class to_watch_list_imdb_iosTests: XCTestCase {
         }
     }
     
+    func testMovieInitialization() {
+        
+        // Success case.
+        let potentialItem = Movie(name: "Newest Moview")
+        XCTAssertNotNil(potentialItem)
+        
+        // Failure cases.
+        let noName = Movie(name: "")
+        XCTAssertNil(noName, "Empty name is invalid")
+        
+    }
+    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1A17EDAB07119166D410583 /* Pods_to_watch_list_imdb_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BC97228971FCB20C3E4FEB /* Pods_to_watch_list_imdb_ios.framework */; };
 		D13A990E1C9EC9AE001C24AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A990D1C9EC9AE001C24AA /* AppDelegate.swift */; };
 		D13A99101C9EC9AE001C24AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A990F1C9EC9AE001C24AA /* ViewController.swift */; };
 		D13A99131C9EC9AE001C24AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13A99111C9EC9AE001C24AA /* Main.storyboard */; };
@@ -16,6 +17,11 @@
 		D13A992E1C9EC9AE001C24AA /* to_watch_list_imdb_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A992D1C9EC9AE001C24AA /* to_watch_list_imdb_iosUITests.swift */; };
 		D13A993E1C9ECC33001C24AA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A993D1C9ECC33001C24AA /* Movie.swift */; };
 		D13A993F1C9ECC33001C24AA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A993D1C9ECC33001C24AA /* Movie.swift */; };
+		D13A994B1C9EE6A8001C24AA /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A994A1C9EE6A8001C24AA /* RestClient.swift */; };
+		D13A994C1C9EE6A8001C24AA /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A994A1C9EE6A8001C24AA /* RestClient.swift */; };
+		D13A994E1C9EE748001C24AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A994D1C9EE748001C24AA /* Constants.swift */; };
+		D13A99501C9F04BB001C24AA /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A994F1C9F04BB001C24AA /* SearchService.swift */; };
+		D13A99511C9F04BB001C24AA /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A994F1C9F04BB001C24AA /* SearchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D681622B5130999A056C757 /* Pods-to_watch_list_imdb_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-to_watch_list_imdb_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-to_watch_list_imdb_ios/Pods-to_watch_list_imdb_ios.release.xcconfig"; sourceTree = "<group>"; };
+		5505ED440C9FD8D5A8D05F9D /* Pods-to_watch_list_imdb_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-to_watch_list_imdb_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-to_watch_list_imdb_ios/Pods-to_watch_list_imdb_ios.debug.xcconfig"; sourceTree = "<group>"; };
+		57BC97228971FCB20C3E4FEB /* Pods_to_watch_list_imdb_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_to_watch_list_imdb_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13A990A1C9EC9AE001C24AA /* to_watch_list_imdb_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = to_watch_list_imdb_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13A990D1C9EC9AE001C24AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D13A990F1C9EC9AE001C24AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +59,9 @@
 		D13A992D1C9EC9AE001C24AA /* to_watch_list_imdb_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = to_watch_list_imdb_iosUITests.swift; sourceTree = "<group>"; };
 		D13A992F1C9EC9AE001C24AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D13A993D1C9ECC33001C24AA /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		D13A994A1C9EE6A8001C24AA /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		D13A994D1C9EE748001C24AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D13A994F1C9F04BB001C24AA /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A17EDAB07119166D410583 /* Pods_to_watch_list_imdb_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31694201F8487F8F78FFC82D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5505ED440C9FD8D5A8D05F9D /* Pods-to_watch_list_imdb_ios.debug.xcconfig */,
+				3D681622B5130999A056C757 /* Pods-to_watch_list_imdb_ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA4B6ED39ADD823D56A34DDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57BC97228971FCB20C3E4FEB /* Pods_to_watch_list_imdb_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D13A99011C9EC9AE001C24AA = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +114,8 @@
 				D13A99211C9EC9AE001C24AA /* to_watch_list_imdb_iosTests */,
 				D13A992C1C9EC9AE001C24AA /* to_watch_list_imdb_iosUITests */,
 				D13A990B1C9EC9AE001C24AA /* Products */,
+				31694201F8487F8F78FFC82D /* Pods */,
+				AA4B6ED39ADD823D56A34DDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +139,9 @@
 				D13A99161C9EC9AE001C24AA /* LaunchScreen.storyboard */,
 				D13A99191C9EC9AE001C24AA /* Info.plist */,
 				D13A993D1C9ECC33001C24AA /* Movie.swift */,
+				D13A994A1C9EE6A8001C24AA /* RestClient.swift */,
+				D13A994D1C9EE748001C24AA /* Constants.swift */,
+				D13A994F1C9F04BB001C24AA /* SearchService.swift */,
 			);
 			path = to_watch_list_imdb_ios;
 			sourceTree = "<group>";
@@ -136,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D13A99321C9EC9AE001C24AA /* Build configuration list for PBXNativeTarget "to_watch_list_imdb_ios" */;
 			buildPhases = (
+				BA894C8E319288D40B2811CA /* Check Pods Manifest.lock */,
 				D13A99061C9EC9AE001C24AA /* Sources */,
 				D13A99071C9EC9AE001C24AA /* Frameworks */,
 				D13A99081C9EC9AE001C24AA /* Resources */,
+				C798913D2824ACB1EFA603AD /* Embed Pods Frameworks */,
+				7360D0386BD6DCA3CA9DBE17 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,12 +293,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7360D0386BD6DCA3CA9DBE17 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-to_watch_list_imdb_ios/Pods-to_watch_list_imdb_ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA894C8E319288D40B2811CA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C798913D2824ACB1EFA603AD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-to_watch_list_imdb_ios/Pods-to_watch_list_imdb_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D13A99061C9EC9AE001C24AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13A994E1C9EE748001C24AA /* Constants.swift in Sources */,
+				D13A994B1C9EE6A8001C24AA /* RestClient.swift in Sources */,
 				D13A99101C9EC9AE001C24AA /* ViewController.swift in Sources */,
+				D13A99501C9F04BB001C24AA /* SearchService.swift in Sources */,
 				D13A990E1C9EC9AE001C24AA /* AppDelegate.swift in Sources */,
 				D13A993E1C9ECC33001C24AA /* Movie.swift in Sources */,
 			);
@@ -271,6 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13A993F1C9ECC33001C24AA /* Movie.swift in Sources */,
+				D13A99511C9F04BB001C24AA /* SearchService.swift in Sources */,
+				D13A994C1C9EE6A8001C24AA /* RestClient.swift in Sources */,
 				D13A99231C9EC9AE001C24AA /* to_watch_list_imdb_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +494,7 @@
 		};
 		D13A99331C9EC9AE001C24AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5505ED440C9FD8D5A8D05F9D /* Pods-to_watch_list_imdb_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = to_watch_list_imdb_ios/Info.plist;
@@ -414,6 +506,7 @@
 		};
 		D13A99341C9EC9AE001C24AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D681622B5130999A056C757 /* Pods-to_watch_list_imdb_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = to_watch_list_imdb_ios/Info.plist;
