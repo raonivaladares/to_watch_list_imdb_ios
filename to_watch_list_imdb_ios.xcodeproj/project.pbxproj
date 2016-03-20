@@ -14,6 +14,8 @@
 		D13A99181C9EC9AE001C24AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13A99161C9EC9AE001C24AA /* LaunchScreen.storyboard */; };
 		D13A99231C9EC9AE001C24AA /* to_watch_list_imdb_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A99221C9EC9AE001C24AA /* to_watch_list_imdb_iosTests.swift */; };
 		D13A992E1C9EC9AE001C24AA /* to_watch_list_imdb_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A992D1C9EC9AE001C24AA /* to_watch_list_imdb_iosUITests.swift */; };
+		D13A993E1C9ECC33001C24AA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A993D1C9ECC33001C24AA /* Movie.swift */; };
+		D13A993F1C9ECC33001C24AA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A993D1C9ECC33001C24AA /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		D13A99291C9EC9AE001C24AA /* to_watch_list_imdb_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = to_watch_list_imdb_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13A992D1C9EC9AE001C24AA /* to_watch_list_imdb_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = to_watch_list_imdb_iosUITests.swift; sourceTree = "<group>"; };
 		D13A992F1C9EC9AE001C24AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D13A993D1C9ECC33001C24AA /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 				D13A99141C9EC9AE001C24AA /* Assets.xcassets */,
 				D13A99161C9EC9AE001C24AA /* LaunchScreen.storyboard */,
 				D13A99191C9EC9AE001C24AA /* Info.plist */,
+				D13A993D1C9ECC33001C24AA /* Movie.swift */,
 			);
 			path = to_watch_list_imdb_ios;
 			sourceTree = "<group>";
@@ -258,6 +262,7 @@
 			files = (
 				D13A99101C9EC9AE001C24AA /* ViewController.swift in Sources */,
 				D13A990E1C9EC9AE001C24AA /* AppDelegate.swift in Sources */,
+				D13A993E1C9ECC33001C24AA /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13A993F1C9ECC33001C24AA /* Movie.swift in Sources */,
 				D13A99231C9EC9AE001C24AA /* to_watch_list_imdb_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
