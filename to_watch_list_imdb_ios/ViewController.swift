@@ -2,7 +2,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    var alert = HelperAlert.sharedInstance
     var movie : Movie?
     var searchService: SearchService = SearchService.instance
 
@@ -32,6 +32,7 @@ class ViewController: UIViewController {
             case .Failure(let error):
                 msg = error.localizedDescription
             }
+            self.alert.message(self, message: msg)
         }
     }
     

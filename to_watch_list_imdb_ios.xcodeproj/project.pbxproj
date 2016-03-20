@@ -22,6 +22,9 @@
 		D13A994E1C9EE748001C24AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A994D1C9EE748001C24AA /* Constants.swift */; };
 		D13A99501C9F04BB001C24AA /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A994F1C9F04BB001C24AA /* SearchService.swift */; };
 		D13A99511C9F04BB001C24AA /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13A994F1C9F04BB001C24AA /* SearchService.swift */; };
+		D151821B1C9F57B100374AA7 /* HelperAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151821A1C9F57B100374AA7 /* HelperAlert.swift */; };
+		D151821C1C9F57B100374AA7 /* HelperAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151821A1C9F57B100374AA7 /* HelperAlert.swift */; };
+		D151821D1C9F57B100374AA7 /* HelperAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151821A1C9F57B100374AA7 /* HelperAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,7 @@
 		D13A994A1C9EE6A8001C24AA /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		D13A994D1C9EE748001C24AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D13A994F1C9F04BB001C24AA /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		D151821A1C9F57B100374AA7 /* HelperAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 				D13A994A1C9EE6A8001C24AA /* RestClient.swift */,
 				D13A994D1C9EE748001C24AA /* Constants.swift */,
 				D13A994F1C9F04BB001C24AA /* SearchService.swift */,
+				D151821A1C9F57B100374AA7 /* HelperAlert.swift */,
 			);
 			path = to_watch_list_imdb_ios;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D13A994E1C9EE748001C24AA /* Constants.swift in Sources */,
+				D151821B1C9F57B100374AA7 /* HelperAlert.swift in Sources */,
 				D13A994B1C9EE6A8001C24AA /* RestClient.swift in Sources */,
 				D13A99101C9EC9AE001C24AA /* ViewController.swift in Sources */,
 				D13A99501C9F04BB001C24AA /* SearchService.swift in Sources */,
@@ -359,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D151821C1C9F57B100374AA7 /* HelperAlert.swift in Sources */,
 				D13A993F1C9ECC33001C24AA /* Movie.swift in Sources */,
 				D13A99511C9F04BB001C24AA /* SearchService.swift in Sources */,
 				D13A994C1C9EE6A8001C24AA /* RestClient.swift in Sources */,
@@ -370,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D151821D1C9F57B100374AA7 /* HelperAlert.swift in Sources */,
 				D13A992E1C9EC9AE001C24AA /* to_watch_list_imdb_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
