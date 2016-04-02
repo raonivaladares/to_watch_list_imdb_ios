@@ -136,17 +136,17 @@
 		D13A990C1C9EC9AE001C24AA /* to_watch_list_imdb_ios */ = {
 			isa = PBXGroup;
 			children = (
+				D1800C5B1CB053C9009E4C26 /* Helpers */,
+				D1800C5A1CB05394009E4C26 /* Controllers */,
+				D1800C591CB05342009E4C26 /* Views */,
+				D1800C581CB0532A009E4C26 /* Models */,
 				D13A990D1C9EC9AE001C24AA /* AppDelegate.swift */,
-				D13A990F1C9EC9AE001C24AA /* ViewController.swift */,
 				D13A99111C9EC9AE001C24AA /* Main.storyboard */,
 				D13A99141C9EC9AE001C24AA /* Assets.xcassets */,
 				D13A99161C9EC9AE001C24AA /* LaunchScreen.storyboard */,
 				D13A99191C9EC9AE001C24AA /* Info.plist */,
-				D13A993D1C9ECC33001C24AA /* Movie.swift */,
 				D13A994A1C9EE6A8001C24AA /* RestClient.swift */,
-				D13A994D1C9EE748001C24AA /* Constants.swift */,
 				D13A994F1C9F04BB001C24AA /* SearchService.swift */,
-				D151821A1C9F57B100374AA7 /* HelperAlert.swift */,
 			);
 			path = to_watch_list_imdb_ios;
 			sourceTree = "<group>";
@@ -167,6 +167,38 @@
 				D13A992F1C9EC9AE001C24AA /* Info.plist */,
 			);
 			path = to_watch_list_imdb_iosUITests;
+			sourceTree = "<group>";
+		};
+		D1800C581CB0532A009E4C26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D13A993D1C9ECC33001C24AA /* Movie.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D1800C591CB05342009E4C26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D1800C5A1CB05394009E4C26 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D13A990F1C9EC9AE001C24AA /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D1800C5B1CB053C9009E4C26 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D151821A1C9F57B100374AA7 /* HelperAlert.swift */,
+				D13A994D1C9EE748001C24AA /* Constants.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

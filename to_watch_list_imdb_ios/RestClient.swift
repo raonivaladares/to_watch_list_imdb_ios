@@ -4,11 +4,6 @@ import Alamofire
 import ObjectMapper
 import AlamofireObjectMapper
 
-enum Result<U> {
-    case Success(output: U)
-    case Failure(error: NSError)
-}
-
 class RestClient<T: Mappable> {
     
     typealias CompletionHandler = (result: Result<T>) -> Void
@@ -33,4 +28,9 @@ class RestClient<T: Mappable> {
     func get(params: [String: AnyObject]?, completionHandler: CompletionHandler) {
         request(method: .GET, resource: resource, params: params, completionHandler: completionHandler)
     }
+}
+
+enum Result<U> {
+  case Success(output: U)
+  case Failure(error: NSError)
 }

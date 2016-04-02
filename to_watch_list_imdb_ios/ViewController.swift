@@ -20,7 +20,11 @@ class ViewController: UIViewController {
 
 
     @IBAction func touchButtonSearch(sender: UIButton) {
+      if let text = textFieldMovieToSearch.text where text.isEmpty {
+        alert.message(self, message: "Empty field: type the movie name")
+      } else {
         searchMovie()
+      }
     }
     
     func searchMovie() {
