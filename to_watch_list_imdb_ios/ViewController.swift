@@ -31,8 +31,12 @@ class ViewController: UIViewController {
         searchService.searchMovie(movieName) { result in
             var msg: String
             switch (result) {
-            case .Success:
-                msg = "success"
+            case .Success(let output):
+                if output.response == "True" {
+                  msg = output.name
+                } else {
+                  msg = output.error
+              }
             case .Failure(let error):
                 msg = error.localizedDescription
             }
