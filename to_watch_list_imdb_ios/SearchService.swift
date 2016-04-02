@@ -5,17 +5,15 @@ import ObjectMapper
 import AlamofireObjectMapper
 
 class SearchService {
-    
-    static let RESOURCE = "/lalala"
     static let instance = SearchService()
     
     private let restClient: RestClient<Movie>
     
-    init(restClient: RestClient<Movie> = RestClient(resource: RESOURCE)) {
+    init(restClient: RestClient<Movie> = RestClient()) {
         self.restClient = restClient
     }
     
-    func searchMovie(completionHandler: (result: Result<Movie>) -> Void){
-        restClient.get(nil, completionHandler: completionHandler)
+  func searchMovie(movieName: String, completionHandler: (result: Result<Movie>) -> Void){
+        restClient.get(movieName, params: nil, completionHandler: completionHandler)
     }
 }

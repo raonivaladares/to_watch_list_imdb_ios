@@ -5,12 +5,10 @@ import ObjectMapper
 import AlamofireObjectMapper
 
 class RestClient<T: Mappable> {
-    
     typealias CompletionHandler = (result: Result<T>) -> Void
-    private let resource: String
-    private let request:(method: Alamofire.Method, resource: String, params: [String: AnyObject]?, completionHandler: CompletionHandler) -> Void = { method, resource, params, completionHandler in
+    private let request:(method: Alamofire.Method, movieName: String, params: [String: AnyObject]?, completionHandler: CompletionHandler) -> Void = { method, movieName, params, completionHandler in
         
-        Alamofire.request(method, Constants.WS.URL+resource, parameters: params)
+        Alamofire.request(method, Constants.WS.URL + movieName, parameters: params)
             .validate()
             .responseObject() { (response: Response<T, NSError>) in
                 if response.result.isSuccess {
@@ -21,12 +19,8 @@ class RestClient<T: Mappable> {
         }
     }
     
-    init(resource: String) {
-        self.resource = resource
-    }
-    
-    func get(params: [String: AnyObject]?, completionHandler: CompletionHandler) {
-        request(method: .GET, resource: resource, params: params, completionHandler: completionHandler)
+  func get(movieName: String, params: [String: AnyObject]?, completionHandler: CompletionHandler) {
+        request(method: .GET, movieName: movieName, params: params, completionHandler: completionHandler)
     }
 }
 

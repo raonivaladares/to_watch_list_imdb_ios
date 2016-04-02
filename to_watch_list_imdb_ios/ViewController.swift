@@ -20,15 +20,15 @@ class ViewController: UIViewController {
 
 
     @IBAction func touchButtonSearch(sender: UIButton) {
-      if let text = textFieldMovieToSearch.text where text.isEmpty {
-        alert.message(self, message: "Empty field: type the movie name")
+      if let movieName = textFieldMovieToSearch.text where !movieName.isEmpty {
+        searchMovie(movieName)
       } else {
-        searchMovie()
+        alert.message(self, message: "Empty field: type the movie name")
       }
     }
     
-    func searchMovie() {
-        searchService.searchMovie() { result in
+  func searchMovie(movieName: String) {
+        searchService.searchMovie(movieName) { result in
             var msg: String
             switch (result) {
             case .Success:
