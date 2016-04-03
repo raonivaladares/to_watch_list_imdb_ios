@@ -11,7 +11,10 @@ class MovieDetailsViewController: UIViewController {
   @IBOutlet weak var labelMoviePlot: UILabel!
   
   override func viewDidLoad() {
-    //imageMovieCover
+    if let imageUrl = movie?.poster where !imageUrl.isEmpty {
+      imageMovieCover.downloadedFrom(link: imageUrl, contentMode: .ScaleAspectFit)
+    }
+    
     labelMovieTitle.text = movie?.title
     labelMovieGenreAndYear.text = movie?.genre
     labelMoviePlot.text = movie?.plot

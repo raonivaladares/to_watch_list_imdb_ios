@@ -26,6 +26,7 @@
 		D151821C1C9F57B100374AA7 /* HelperAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151821A1C9F57B100374AA7 /* HelperAlert.swift */; };
 		D151821D1C9F57B100374AA7 /* HelperAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151821A1C9F57B100374AA7 /* HelperAlert.swift */; };
 		D1800C5D1CB17328009E4C26 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1800C5C1CB17328009E4C26 /* MovieDetailsViewController.swift */; };
+		D1800C601CB1B914009E4C26 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1800C5F1CB1B914009E4C26 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		D13A994F1C9F04BB001C24AA /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		D151821A1C9F57B100374AA7 /* HelperAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAlert.swift; sourceTree = "<group>"; };
 		D1800C5C1CB17328009E4C26 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		D1800C5F1CB1B914009E4C26 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		D13A990C1C9EC9AE001C24AA /* to_watch_list_imdb_ios */ = {
 			isa = PBXGroup;
 			children = (
+				D1800C5E1CB1B881009E4C26 /* Extensions */,
 				D1800C5B1CB053C9009E4C26 /* Helpers */,
 				D1800C5A1CB05394009E4C26 /* Controllers */,
 				D1800C591CB05342009E4C26 /* Views */,
@@ -202,6 +205,14 @@
 				D13A994D1C9EE748001C24AA /* Constants.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		D1800C5E1CB1B881009E4C26 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1800C5F1CB1B914009E4C26 /* ImageLoader.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +402,7 @@
 				D151821B1C9F57B100374AA7 /* HelperAlert.swift in Sources */,
 				D13A994B1C9EE6A8001C24AA /* RestClient.swift in Sources */,
 				D13A99101C9EC9AE001C24AA /* SearchMovieViewController.swift in Sources */,
+				D1800C601CB1B914009E4C26 /* ImageLoader.swift in Sources */,
 				D13A99501C9F04BB001C24AA /* SearchService.swift in Sources */,
 				D13A990E1C9EC9AE001C24AA /* AppDelegate.swift in Sources */,
 				D13A993E1C9ECC33001C24AA /* Movie.swift in Sources */,
