@@ -7,13 +7,13 @@ class MovieDetailsViewController: UIViewController {
   // MARK: outlets
   @IBOutlet weak var imageMovieCover: UIImageView!
   @IBOutlet weak var labelMovieTitle: UILabel!
-  @IBOutlet weak var labelMovieCategory: UILabel!
-  @IBOutlet weak var labelMovieDescription: UILabel!
+  @IBOutlet weak var labelMovieGenreAndYear: UILabel!
+  @IBOutlet weak var labelMoviePlot: UILabel!
   
   override func viewDidLoad() {
     //imageMovieCover
     labelMovieTitle.text = movie?.title
-    labelMovieCategory.text = movie?.genre
-    labelMovieDescription.text = movie?.plot
+    labelMovieGenreAndYear.text = movie?.genre
+    labelMoviePlot.text = movie?.plot
   }
 }
