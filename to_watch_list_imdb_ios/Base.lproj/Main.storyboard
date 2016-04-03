@@ -126,6 +126,12 @@
                             <constraint firstItem="zHu-TY-oUP" firstAttribute="leading" secondItem="RmD-fE-gMl" secondAttribute="leadingMargin" id="v2u-nn-J8X"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageMovieCover" destination="IDk-K5-3Lp" id="eY1-M9-pLf"/>
+                        <outlet property="labelMovieCategory" destination="Qcw-1J-w4F" id="v4Q-QV-PGr"/>
+                        <outlet property="labelMovieDescription" destination="Mmz-KF-nNu" id="NlB-ep-lA5"/>
+                        <outlet property="labelMovieTitle" destination="KsM-sX-3S5" id="foc-Mt-uSC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yG-ld-Wh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
