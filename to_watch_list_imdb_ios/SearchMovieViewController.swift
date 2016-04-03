@@ -21,11 +21,11 @@ class SearchMovieViewController: UIViewController {
       switch (result) {
       case .Success(let output):
         if output.response == "True" {
-          msg = output.name
+          msg = output.title!
           self.movie = output
           self.performSegueWithIdentifier("MoviewDetailsSegue", sender: nil)
         } else {
-          msg = output.error
+          msg = output.error!
           self.alert.message(self, message: msg)
         }
       case .Failure(let error):

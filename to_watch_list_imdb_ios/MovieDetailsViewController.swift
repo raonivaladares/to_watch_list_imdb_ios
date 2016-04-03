@@ -12,8 +12,8 @@ class MovieDetailsViewController: UIViewController {
   
   override func viewDidLoad() {
     //imageMovieCover
-    labelMovieTitle.text = movie?.name
-   // labelMovieCategory.text = movie?.name
-   // /labelMovieDescription.text = movie?.name
+    labelMovieTitle.text = movie?.title
+    labelMovieCategory.text = movie?.genre
+    labelMovieDescription.text = movie?.plot
   }
 }
