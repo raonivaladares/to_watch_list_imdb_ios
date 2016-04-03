@@ -6,9 +6,10 @@ import AlamofireObjectMapper
 
 class RestClient<T: Mappable> {
     typealias CompletionHandler = (result: Result<T>) -> Void
-    private let request:(method: Alamofire.Method, movieName: String, params: [String: AnyObject]?, completionHandler: CompletionHandler) -> Void = { method, movieName, params, completionHandler in
-        
-        Alamofire.request(method, Constants.WS.URL + movieName, parameters: params)
+    private let request:(method: Alamofire.Method, movieTitle: String, params: [String: AnyObject]?, completionHandler: CompletionHandler) -> Void = { method, movieTitle, params, completionHandler in
+      
+      let scapedTitle = "\(movieTitle)".stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!
+        Alamofire.request(method, Constants.WS.URL + scapedTitle, parameters: params)
             .validate()
             .responseObject() { (response: Response<T, NSError>) in
                 if response.result.isSuccess {
@@ -19,8 +20,8 @@ class RestClient<T: Mappable> {
         }
     }
     
-  func get(movieName: String, params: [String: AnyObject]?, completionHandler: CompletionHandler) {
-        request(method: .GET, movieName: movieName, params: params, completionHandler: completionHandler)
+  func get(movieTitle: String, params: [String: AnyObject]?, completionHandler: CompletionHandler) {
+        request(method: .GET, movieTitle: movieTitle, params: params, completionHandler: completionHandler)
     }
 }
 

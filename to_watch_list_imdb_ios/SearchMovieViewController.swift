@@ -1,7 +1,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SearchMovieViewController.swift: UIViewController {
     var alert = HelperAlert.sharedInstance
     var movie : Movie?
     var searchService: SearchService = SearchService.instance
