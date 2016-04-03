@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search Movie View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="to_watch_list_imdb_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchMovieViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SearchMovieViewController" customModule="to_watch_list_imdb_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -34,16 +35,17 @@
                     </view>
                     <connections>
                         <outlet property="textFieldMovieToSearch" destination="DuQ-Uz-MZP" id="tne-CJ-6BP"/>
+                        <segue destination="vLU-5W-oAj" kind="show" identifier="MoviewDetailsSegue" id="HLW-66-6pM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="565" y="405"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Details View Controller-->
         <scene sceneID="wGN-nx-HSm">
             <objects>
-                <viewController id="vLU-5W-oAj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vLU-5W-oAj" customClass="MovieDetailsViewController" customModule="to_watch_list_imdb_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cZW-Tp-d1C"/>
                         <viewControllerLayoutGuide type="bottom" id="cqE-f0-uOn"/>
@@ -51,7 +53,78 @@
                     <view key="view" contentMode="scaleToFill" id="RmD-fE-gMl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hbg-KY-kxr">
+                                <rect key="frame" x="20" y="25" width="560" height="173"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IDk-K5-3Lp">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="9cp-68-BMT"/>
+                                            <constraint firstAttribute="height" constant="140" id="hi0-y5-iwV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mS9-pq-bsz">
+                                        <rect key="frame" x="110" y="0.0" width="450" height="173"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsM-sX-3S5">
+                                                <rect key="frame" x="0.0" y="0.0" width="450" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie category, like animation, musical and others" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcw-1J-w4F">
+                                                <rect key="frame" x="0.0" y="31" width="450" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="450" placeholderIntrinsicHeight="115" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmz-KF-nNu">
+                                                <rect key="frame" x="0.0" y="58" width="450" height="115"/>
+                                                <mutableString key="text">Movie content: Sirloin shank turducken swine capicola brisket tenderloin pork belly ham hock filet mignon pork chicken tongue tri-tip. Jerky alcatra turkey shankle shank, beef ribs rump salami strip steak doner kevin venison cupim. Pork pork loin sirloin hamburger flank meatloaf, sausage fatback beef ribs jerky bresaola ribeye capicola swine andouille. Tail pork loin ribeye, sirloin capicola pig pastrami fatback short loin rump sausage swine landjaeger flank. Turkey swine salami rump strip steak porchetta prosciutto doner tail brisket ribeye landjaeger leberkas turducken pork. Fatback andouille drumstick venison bresaola. Andouille ham hock t-bone shoulder, pork chop tenderloin rump brisket doner filet mignon frankfurter alcatra ribeye jowl meatloaf.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mS9-pq-bsz" firstAttribute="leading" secondItem="IDk-K5-3Lp" secondAttribute="trailing" id="jA1-fF-yAU"/>
+                                    <constraint firstItem="mS9-pq-bsz" firstAttribute="centerY" secondItem="Hbg-KY-kxr" secondAttribute="centerY" id="uzI-TB-LVO"/>
+                                    <constraint firstAttribute="trailing" secondItem="mS9-pq-bsz" secondAttribute="trailing" id="yae-GX-VjQ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="jA1-fF-yAU"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHu-TY-oUP">
+                                <rect key="frame" x="20" y="186" width="560" height="196"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="NfE-CW-K5V"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sd6-Cr-gby">
+                                <rect key="frame" x="20" y="390" width="560" height="210"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hbg-KY-kxr" firstAttribute="leading" secondItem="RmD-fE-gMl" secondAttribute="leadingMargin" id="3kD-xQ-f6u"/>
+                            <constraint firstItem="cqE-f0-uOn" firstAttribute="top" secondItem="Sd6-Cr-gby" secondAttribute="bottom" id="8aC-Vw-ykS"/>
+                            <constraint firstItem="Sd6-Cr-gby" firstAttribute="top" secondItem="zHu-TY-oUP" secondAttribute="bottom" constant="8" id="BRh-aW-WzY"/>
+                            <constraint firstItem="Sd6-Cr-gby" firstAttribute="leading" secondItem="RmD-fE-gMl" secondAttribute="leadingMargin" id="J4l-E0-qhE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hbg-KY-kxr" secondAttribute="trailing" id="UFD-sx-PsJ"/>
+                            <constraint firstItem="Sd6-Cr-gby" firstAttribute="trailing" secondItem="RmD-fE-gMl" secondAttribute="trailingMargin" id="Yix-xW-SRO"/>
+                            <constraint firstItem="Hbg-KY-kxr" firstAttribute="top" secondItem="cZW-Tp-d1C" secondAttribute="bottom" constant="5" id="ZUl-Fh-aiu"/>
+                            <constraint firstItem="zHu-TY-oUP" firstAttribute="top" secondItem="Hbg-KY-kxr" secondAttribute="bottom" constant="-12" id="aZi-P7-GEK"/>
+                            <constraint firstItem="zHu-TY-oUP" firstAttribute="trailing" secondItem="RmD-fE-gMl" secondAttribute="trailingMargin" id="pK3-G9-uwj"/>
+                            <constraint firstItem="zHu-TY-oUP" firstAttribute="leading" secondItem="RmD-fE-gMl" secondAttribute="leadingMargin" id="v2u-nn-J8X"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yG-ld-Wh6" userLabel="First Responder" sceneMemberID="firstResponder"/>

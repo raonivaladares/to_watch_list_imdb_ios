@@ -1,7 +1,7 @@
 
 import UIKit
 
-class SearchMovieViewController.swift: UIViewController {
+class SearchMovieViewController: UIViewController {
     var alert = HelperAlert.sharedInstance
     var movie : Movie?
     var searchService: SearchService = SearchService.instance
@@ -34,6 +34,7 @@ class SearchMovieViewController.swift: UIViewController {
             case .Success(let output):
                 if output.response == "True" {
                   msg = output.name
+                  self.performSegueWithIdentifier("MoviewDetailsSegue", sender: nil)
                 } else {
                   msg = output.error
               }
