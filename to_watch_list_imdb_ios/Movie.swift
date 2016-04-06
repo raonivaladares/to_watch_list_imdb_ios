@@ -60,6 +60,24 @@ class Movie: Mappable {
   init(){
   }
   
+  func moviewDetailsMap() -> [String: String] {
+    let movieDetails: [String: String] = [
+      "Rated" : rated!,
+      "Run time" : runtime!,
+      "Director" : director!,
+      "Writer" : writer!,
+      "Actors" : actors!,
+      "Language" : language!,
+      "Country" : country!,
+      "Awards" : awards!,
+      "MetaScore" : metascore!,
+      "IMDB rating" : imdbRating!,
+      "IMDB votes" : imdbVotes!,
+      "Type" : type!
+    ]
+    return movieDetails
+  }
+  
   func mapping(map: Map) {
     title         <- map["Title"]
     year          <- map["Year"]
