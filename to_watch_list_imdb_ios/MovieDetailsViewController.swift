@@ -3,7 +3,7 @@ import UIKit
 class MovieDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   // MARK: atributes
   var movie: Movie?
-  let cellReuseIdentifier = "cell"
+  
   var movieDetails: [String: String] = [:]
   
   // MARK: outlets
@@ -15,7 +15,7 @@ class MovieDetailsViewController: UIViewController, UITableViewDelegate, UITable
   
   override func viewDidLoad() {
     movieDetails = (movie?.moviewDetailsMap())!
-    self.tableViewDetails.registerClass(MovieDetailsCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+   
     if let imageUrl = movie?.poster where !imageUrl.isEmpty {
       imageMovieCover.downloadedFrom(link: imageUrl, contentMode: .ScaleAspectFit)
     }
@@ -32,11 +32,11 @@ class MovieDetailsViewController: UIViewController, UITableViewDelegate, UITable
   
   // create a cell for each table view row
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    
-    let cell = self.tableViewDetails.dequeueReusableCellWithIdentifier(cellReuseIdentifier) as! MovieDetailsCell
-    
-    cell.textLabel?.text = Array(movieDetails.keys)[indexPath.section]
-    
+    let cellIdentifier = "MovieDetailsCell"
+    let cell = tableViewDetails.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! MovieDetailsCell
+    cell.labelDetail.text = Array(movieDetails.keys)[indexPath.row]
+    cell.labelDetailContent.text = Array(movieDetails.values)[indexPath.row]
+
     return cell
   }
   
