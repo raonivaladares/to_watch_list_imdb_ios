@@ -27,7 +27,6 @@
 		D151821D1C9F57B100374AA7 /* HelperAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151821A1C9F57B100374AA7 /* HelperAlert.swift */; };
 		D1800C5D1CB17328009E4C26 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1800C5C1CB17328009E4C26 /* MovieDetailsViewController.swift */; };
 		D1800C601CB1B914009E4C26 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1800C5F1CB1B914009E4C26 /* ImageLoader.swift */; };
-		D1BB90761CB4A049003C7954 /* MovieDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB90751CB4A049003C7954 /* MovieDetailsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +70,6 @@
 		D151821A1C9F57B100374AA7 /* HelperAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAlert.swift; sourceTree = "<group>"; };
 		D1800C5C1CB17328009E4C26 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		D1800C5F1CB1B914009E4C26 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		D1BB90751CB4A049003C7954 /* MovieDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +185,6 @@
 		D1800C591CB05342009E4C26 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D1BB90751CB4A049003C7954 /* MovieDetailsCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -409,7 +406,6 @@
 				D13A99501C9F04BB001C24AA /* SearchService.swift in Sources */,
 				D13A990E1C9EC9AE001C24AA /* AppDelegate.swift in Sources */,
 				D13A993E1C9ECC33001C24AA /* Movie.swift in Sources */,
-				D1BB90761CB4A049003C7954 /* MovieDetailsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
