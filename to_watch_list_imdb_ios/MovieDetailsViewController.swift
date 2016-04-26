@@ -26,7 +26,7 @@ class MovieDetailsViewController: UIViewController {
     labelYear.text = "(" + (movie?.year)! + ")"
     labelMovieGenre.text = movie?.genre
     labelMoviePlot.text = movie?.plot
-    labelDirector.text = movie?.director
-    labelWriter.text = movie?.writer
+    //labelDirector.text = movie?.director
+    //labelWriter.text = movie?.writer
   }
 }
